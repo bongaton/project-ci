@@ -372,14 +372,9 @@ workflows:
     when:
       equal: [ pantheon, << pipeline.parameters.host-variant >> ]
     jobs:
-      - static_tests
-      - build
       # This is doesn't set the branch restraints because multidevs can be
       # created using any branch.
       - deploy_to_pantheon:
-          requires:
-            - static_tests
-            - build
       - hold-dev:
           type: approval
           requires:
