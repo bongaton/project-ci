@@ -612,7 +612,7 @@ commands:
             if [ -f "./.circleci/scripts/set-environment" ]; then
               ./.circleci/scripts/set-environment
             elif [ -f "./vendor/fourkitchens/project_ci/set-environment" ]; then
-              ./vendor/fourkitchens/project_ci/set-environment
+              ./vendor/fourkitchens/project_ci/scripts/set-environment
             fi
   restore-project:
     description: Restore a Drupal project that was persisted from another job.
