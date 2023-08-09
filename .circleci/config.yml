@@ -611,7 +611,7 @@ commands:
           command: |
             if [ -f "./.circleci/scripts/set-environment" ]; then
               ./.circleci/scripts/set-environment
-            elif [ -f "./vendor/fourkitchens/project_ci/set-environment" ]; then
+            elif [ -f "./vendor/fourkitchens/project_ci/scripts/set-environment" ]; then
               ./vendor/fourkitchens/project_ci/scripts/set-environment
             fi
   restore-project:
