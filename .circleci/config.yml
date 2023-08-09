@@ -374,7 +374,7 @@ workflows:
     jobs:
       # This is doesn't set the branch restraints because multidevs can be
       # created using any branch.
-      - deploy_to_pantheon:
+      - deploy_to_pantheon
       - hold-dev:
           type: approval
           requires:
