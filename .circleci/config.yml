@@ -279,7 +279,7 @@ jobs:
           command: |
             if [ -f "./.circleci/scripts/set-environment" ]; then
               ./.circleci/scripts/set-environment
-            else
+            elif [ -f "./vendor/fourkitchens/project_ci/scripts/set-environment" ]; then
               ./vendor/fourkitchens/project_ci/scripts/set-environment
             fi
       - run:
@@ -309,7 +309,7 @@ jobs:
           command: |
             if [ -f "./.circleci/scripts/set-environment" ]; then
               ./.circleci/scripts/set-environment
-            else
+            elif [ -f "./vendor/fourkitchens/project_ci/scripts/set-environment" ]; then
               ./vendor/fourkitchens/project_ci/scripts/set-environment
             fi
       - run:
@@ -338,7 +338,7 @@ jobs:
           command: |
             if [ -f "./.circleci/scripts/set-environment" ]; then
               ./.circleci/scripts/set-environment
-            else
+            elif [ -f "./vendor/fourkitchens/project_ci/scripts/set-environment" ]; then
               ./vendor/fourkitchens/project_ci/scripts/set-environment
             fi
       - run:
