@@ -1,0 +1,4 @@
+name: 4k-project-ci
+recipe: drupal10
+config:
+  webroot: web
