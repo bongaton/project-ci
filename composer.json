@@ -52,6 +52,12 @@
             "php": "8.2.0"
         }
     },
+    "autoload": {
+        "classmap": [
+            "upstream-configuration/scripts/ComposerScripts.php",
+            "scripts/composer/ScriptHandler.php"
+        ]
+    },
     "scripts": {
         "prepare-for-pantheon": "DrupalProject\\composer\\ScriptHandler::prepareForPantheon",
         "pre-update-cmd": ["DrupalComposerManaged\\ComposerScripts::preUpdate"],
