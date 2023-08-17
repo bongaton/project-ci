@@ -52,6 +52,11 @@
             "php": "8.2.0"
         }
     },
+    "scripts": {
+        "prepare-for-pantheon": "DrupalProject\\composer\\ScriptHandler::prepareForPantheon",
+        "pre-update-cmd": ["DrupalComposerManaged\\ComposerScripts::preUpdate"],
+        "post-update-cmd": ["DrupalComposerManaged\\ComposerScripts::postUpdate"]
+    },
     "extra": {
         "drupal-scaffold": {
             "locations": {
